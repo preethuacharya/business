@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AKSHARA PU COLLEGE | ADVERTISING</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#f4f7fb;--surface:#ffffff;--ink:#16233b;--muted:#5b6779;--line:#dfe6f1;
+--blue:#2457d6;--blue-soft:#e8efff;--navy:#122a55;--gold:#b7791f;--gold-soft:#fff5e2;
+--red:#b3402c;--red-soft:#fdeee9;--teal:#0d7c74;--teal-soft:#e6f6f4;
+--shadow-sm:0 4px 14px rgba(18,42,85,.06);--shadow:0 14px 34px rgba(18,42,85,.09);
+--shadow-lg:0 26px 60px rgba(18,42,85,.14);--r:18px;--r-lg:24px;
+}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);overflow:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+radial-gradient(52rem 52rem at 8% 8%,rgba(36,87,214,.09),transparent 60%),
+radial-gradient(48rem 48rem at 92% 92%,rgba(183,121,31,.08),transparent 60%),
+linear-gradient(180deg,#f7f9fd,#eef3fa)}
+.shell{height:100vh;display:flex;flex-direction:column}
+.top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem clamp(1rem,3vw,2.4rem);background:rgba(255,255,255,.86);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);z-index:40}
+.brand{display:flex;align-items:center;gap:.75rem;min-width:0}
+.mark{width:2.5rem;height:2.5rem;flex:0 0 auto;border-radius:14px;background:linear-gradient(135deg,var(--blue),#4d80f5);color:#fff;display:grid;place-items:center;font-weight:800;box-shadow:0 8px 20px rgba(36,87,214,.22)}
+.brand b{display:block;font-size:.98rem;letter-spacing:-.01em;color:var(--navy);white-space:nowrap}
+.brand small{display:block;font-size:.64rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.menu{display:flex;gap:.2rem;flex-wrap:wrap;justify-content:center;min-width:0}
+.tab{position:relative;font:inherit;font-size:.8rem;font-weight:800;color:var(--muted);background:transparent;border:0;border-radius:999px;padding:.6rem .9rem;cursor:pointer;transition:color .22s,background .22s,transform .22s}
+.tab:hover,.tab:focus-visible{color:var(--navy);background:var(--blue-soft);transform:translateY(-1px)}
+.tab.active{color:#fff;background:var(--blue);box-shadow:0 8px 20px rgba(36,87,214,.2)}
+.tab.active::after{content:"";position:absolute;left:50%;bottom:-.28rem;width:.42rem;height:.42rem;border-radius:50%;background:var(--blue);transform:translateX(-50%)}
+.count{font-size:.78rem;font-weight:800;color:var(--muted);white-space:nowrap}
+main{flex:1;overflow:auto;padding:clamp(1.3rem,3vw,2.8rem) clamp(1rem,4vw,3.6rem) 7rem;scroll-behavior:smooth}
+.page{display:none;max-width:1240px;margin:0 auto}
+.page.active{display:block;animation:pageIn .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes pageIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(16px);animation:rise .55s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.kicker{display:inline-flex;align-items:center;gap:.55rem;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:.55rem}
+.kicker::before{content:"";width:1.8rem;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--blue),transparent)}
+h1{font-family:Fraunces,serif;font-weight:800;font-size:clamp(2.7rem,7.5vw,6.4rem);line-height:.98;margin:.2rem 0 .5rem;letter-spacing:-.035em;color:var(--navy);text-align:center}
+h2{font-family:Fraunces,serif;font-weight:700;font-size:clamp(1.8rem,3.3vw,3rem);margin:.15rem 0 .55rem;letter-spacing:-.03em;color:var(--navy)}
+h3{font-size:clamp(1.08rem,1.55vw,1.35rem);margin:1.3rem 0 .45rem;color:var(--navy)}
+h4{margin:.7rem 0 .25rem;color:var(--navy)}
+p,li{color:var(--muted);font-size:clamp(.97rem,1.18vw,1.13rem);line-height:1.68}
+p{margin:.3rem 0 .9rem}ul{margin:.3rem 0 1rem 1.15rem}li{margin:.35rem 0}li::marker{color:var(--blue)}
+.lead{font-size:clamp(1.02rem,1.55vw,1.32rem);color:#3b4a60;max-width:920px}
+.center{text-align:center}
+.hero{min-height:calc(100vh - 11rem);display:flex;flex-direction:column;justify-content:center;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:.45rem;background:var(--blue-soft);color:var(--blue);border:1px solid #c9dcff;border-radius:999px;padding:.4rem .85rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.35rem;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#c8d6ee}
+.grid{display:grid;gap:.9rem}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1050px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:660px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.tag{display:inline-flex;align-items:center;gap:.35rem;background:var(--blue-soft);color:var(--blue);border-radius:999px;padding:.3rem .7rem;font-size:.67rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.55rem}
+.tag.gold{background:var(--gold-soft);color:var(--gold);border:1px solid #f3ddb4}
+.tag.red{background:var(--red-soft);color:var(--red);border:1px solid #f6cdc2}
+.tag.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #c4e8e4}
+.note{position:relative;background:#fff;border-left:5px solid var(--blue);border-radius:0 16px 16px 0;padding:1.15rem 1.3rem;box-shadow:var(--shadow-sm);margin:1rem 0}
+.note strong{color:var(--navy)}
+.note.gold{border-color:var(--gold);background:linear-gradient(90deg,var(--gold-soft),#fff)}
+.note.red{border-color:var(--red);background:linear-gradient(90deg,var(--red-soft),#fff)}
+.clickable{width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.35rem;cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s;box-shadow:var(--shadow-sm)}
+.clickable:hover,.clickable:focus-visible{transform:translateY(-4px);border-color:#b9cbee;box-shadow:var(--shadow)}
+.clickable h3{margin:.1rem 0 .35rem}
+.clickable p{margin:0;font-size:.95rem}
+.plus{display:inline-grid;place-items:center;width:2rem;height:2rem;margin-top:.75rem;border-radius:50%;background:var(--blue-soft);color:var(--blue);font-weight:800;transition:.25s}
+.clickable:hover .plus,.clickable:focus-visible .plus{background:var(--blue);color:#fff;transform:rotate(90deg)}
+.pic{width:100%;height:230px;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:var(--blue-soft);display:block}
+.pic-label{font-size:.8rem;color:var(--muted);font-weight:600;margin-top:.45rem;text-align:center}
+.btn{display:inline-flex;align-items:center;gap:.55rem;border:0;border-radius:999px;padding:.85rem 1.45rem;font:inherit;font-weight:800;font-size:.98rem;cursor:pointer;transition:transform .22s,box-shadow .22s,background .22s}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(36,87,214,.18)}
+.btn-blue:hover,.btn-blue:focus-visible{transform:translateY(-2px) scale(1.01);box-shadow:0 14px 30px rgba(36,87,214,.25)}
+.btn-white{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.btn-white:hover,.btn-white:focus-visible{transform:translateY(-2px);box-shadow:var(--shadow)}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;max-width:780px;margin:1.2rem auto 0}
+@media(max-width:700px){.team{grid-template-columns:repeat(2,1fr)}}
+.member{background:#fff;border:1px solid var(--line);border-radius:14px;padding:.75rem;font-weight:800;color:var(--navy);box-shadow:var(--shadow-sm);transition:.22s}
+.member:hover,.member:focus-visible{transform:translateY(-3px);border-color:#b9cbee;box-shadow:var(--shadow)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;align-items:center;margin:1rem 0}
+@media(max-width:900px){.flow{grid-template-columns:1fr}}
+.flow div{padding:.85rem;text-align:center;font-weight:800;color:var(--navy);background:var(--blue-soft);border:1px solid #c9dcff;border-radius:14px}
+.flow span{color:var(--blue);font-size:1.35rem;text-align:center}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-sm)}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th,td{padding:.9rem .85rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase}
+td{color:var(--muted);font-size:.96rem}td:first-child{color:var(--navy);font-weight:800}
+tr:last-child td{border-bottom:0}
+.overlay{position:fixed;inset:0;background:rgba(18,42,85,.42);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:1.1rem;z-index:90}
+.overlay.open{display:flex;animation:fade .18s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{width:min(780px,100%);max-height:84vh;overflow:auto;background:#fff;border-radius:22px;padding:1.8rem;box-shadow:var(--shadow-lg);animation:pop .3s cubic-bezier(.2,.85,.25,1)}
+@keyframes pop{from{opacity:0;transform:scale(.95) translateY(18px)}to{opacity:1;transform:none}}
+.modal-top{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
+.close{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:999px;padding:.5rem 1rem;font:inherit;font-weight:800;cursor:pointer;transition:.2s}
+.close:hover,.close:focus-visible{background:var(--blue);color:#fff}
+.bottom{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem clamp(1rem,4vw,3.6rem);background:rgba(255,255,255,.9);border-top:1px solid var(--line);backdrop-filter:blur(10px);z-index:40}
+.bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--blue),#7ea4f7);transition:width .35s ease;z-index:50}
+.hint{font-size:.8rem;color:var(--muted);font-weight:600}
+kbd{font-family:ui-monospace,Menlo,monospace;background:var(--blue-soft);border:1px solid #c9dcff;border-radius:6px;padding:.08rem .38rem;color:var(--navy);font-size:.76rem}
+.thanks{min-height:calc(100vh - 12rem);display:grid;place-items:center;text-align:center}
+.thanks-card{max-width:780px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(2rem,5vw,3.5rem);box-shadow:var(--shadow)}
+.thanks h1{font-size:clamp(2.8rem,8vw,6rem)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="shell">
+<header class="top">
+<div class="brand"><div class="mark">A</div><div><b>AKSHARA PU COLLEGE</b><small>College Seminar Project</small></div></div>
+<nav class="menu" id="menu" aria-label="Seminar navigation"></nav>
+<div class="count" id="count">01 / 07</div>
+</header>
+
+<main id="main">
+
+<!-- PAGE 1 -->
+<section class="page active" id="p1">
+<div class="hero">
+<div class="badge rv" style="animation-delay:.04s">College Seminar Presentation</div>
+<h1 class="rv" style="animation-delay:.08s">AKSHARA PU COLLEGE</h1>
+<h1 class="rv" style="animation-delay:.14s;color:var(--blue)">ADVERTISING</h1>
+<p class="lead center rv" style="animation-delay:.22s">A college seminar presentation on advertising: its meaning, features, merits, objections and conclusion.</p>
+<div class="card rv" style="animation-delay:.3s;max-width:780px;margin:1.5rem auto 0">
+<h3 class="center" style="margin-top:0">Guidance</h3>
+<p class="center" style="margin:0"><strong>SANTHOSH SIR</strong></p>
+<h3 class="center">Prepared by Team</h3>
+<div class="team">
+<div class="member">1. PREETHAM</div><div class="member">2. CHETHAN</div><div class="member">3. PARMESH</div>
+<div class="member">4. CHINMAYA</div><div class="member">5. EKANTH</div><div class="member">6. JEEVAN</div>
+</div>
+</div>
+<button class="btn btn-blue rv" style="animation-delay:.38s;margin-top:1.5rem" onclick="go(2)">Start Presentation →</button>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p2">
+<div class="kicker rv">Page 02</div>
+<h2 class="rv" style="animation-delay:.05s">Context of Advertising</h2>
+<p class="lead rv" style="animation-delay:.1s">Advertising is a paid, impersonal and sponsor-identified form of communication used to promote goods or services and persuade potential customers to buy them.</p>
+<div class="grid g2 rv" style="animation-delay:.16s">
+<div class="card"><span class="tag">Introduction</span><h3>Meaning of advertising</h3><p>Advertising is an impersonal form of communication, paid for by marketers or sponsors, to promote goods or services. Common media include newspapers, magazines, television and radio.</p></div>
+<div class="card"><span class="tag gold">Features</span><h3>Essential features</h3><ul><li><strong>Paid form:</strong> The sponsor bears the cost of communication.</li><li><strong>Impersonality:</strong> There is no direct face-to-face contact.</li><li><strong>Identified sponsor:</strong> An identifiable person or company makes and pays for the advertisement.</li></ul></div>
+<div class="card"><span class="tag teal">Merits</span><h3>Main advantages</h3><ul><li>Mass reach across a wide geographical area.</li><li>Enhances customer satisfaction and confidence.</li><li>Expressive through visuals, sound and graphics.</li><li>Economical for reaching a large audience.</li></ul></div>
+<div class="card"><span class="tag red">Objections</span><h3>Major objections</h3><ul><li>It may add to product cost.</li><li>It may undermine social values.</li><li>It may confuse buyers.</li><li>It may encourage the sale of inferior products.</li></ul></div>
+</div>
+<div class="note rv" style="animation-delay:.28s"><strong>Conclusion:</strong> Advertising informs, persuades and influences consumers. It is an essential marketing tool, but its effectiveness depends on using the right combination of promotional tools.</div>
+<div class="rv" style="animation-delay:.34s"><button class="btn btn-blue" onclick="go(3)">Next: Features →</button></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p3">
+<div class="kicker rv">Page 03</div>
+<h2 class="rv" style="animation-delay:.05s">Features and Functions</h2>
+<p class="lead rv" style="animation-delay:.1s">Advertising has three main features and performs several important functions in marketing communication.</p>
+<div class="grid g3 rv" style="animation-delay:.16s">
+<div class="card"><span class="tag">Feature 1</span><h3>Paid form</h3><p>The sponsor must bear the cost of communicating with prospective customers.</p></div>
+<div class="card"><span class="tag">Feature 2</span><h3>Impersonality</h3><p>There is no direct face-to-face contact between the advertiser and the prospect. Advertising creates a monologue rather than a dialogue.</p></div>
+<div class="card"><span class="tag">Feature 3</span><h3>Identified sponsor</h3><p>An identifiable individual or company makes the advertisement and bears its cost.</p></div>
+</div>
+<h3 class="rv" style="animation-delay:.26s">Functions of advertising</h3>
+<div class="grid g2 rv" style="animation-delay:.31s">
+<div class="card"><h4>Informing customers</h4><p>Advertising informs potential customers about the availability, features and merits of a product or service.</p></div>
+<div class="card"><h4>Creating awareness and interest</h4><p>Advertising creates awareness and builds interest among prospective buyers.</p></div>
+<div class="card"><h4>Persuading customers</h4><p>As part of promotion, advertising helps persuade potential customers to buy a product or service.</p></div>
+<div class="card"><h4>Supporting mass marketing</h4><p>Mass media enables a standardised message to reach a large number of consumers in a market segment within a short time.</p></div>
+</div>
+<div class="card rv" style="animation-delay:.4s">
+<h4>Communication flow</h4>
+<div class="flow"><div>Sponsor</div><span>→</span><div>Advertisement</div><span>→</span><div>Mass audience</div><span>→</span><div>Awareness & interest</div><span>→</span><div>Purchase intention</div></div>
+</div>
+<div class="card rv" style="animation-delay:.46s">
+<h4>Example advertisement</h4>
+<img class="pic" src="example-advertisement-1.jpg" alt="Example advertisement">
+<p class="pic-label">Add your attached advertisement image here as <strong>example-advertisement-1.jpg</strong></p>
+</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="p4">
+<div class="kicker rv">Page 04</div>
+<h2 class="rv" style="animation-delay:.05s">Merits / Advantages</h2>
+<p class="lead rv" style="animation-delay:.1s">Select a merit to view its complete explanation. Press <kbd>Esc</kbd> to close the explanation panel.</p>
+<div class="grid g2 rv" style="animation-delay:.16s" id="meritGrid"></div>
+<div class="card rv" style="animation-delay:.32s;margin-top:1rem">
+<h4>Example advertisement</h4>
+<img class="pic" src="example-advertisement-2.jpg" alt="Example advertisement">
+<p class="pic-label">Add your attached advertisement image here as <strong>example-advertisement-2.jpg</strong></p>
+</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="p5">
+<div class="kicker rv">Page 05</div>
+<h2 class="rv" style="animation-delay:.05s">Objections to Advertising</h2>
+<p class="lead rv" style="animation-delay:.1s">Select an objection to view the criticism and the chapter’s response. Press <kbd>Esc</kbd> to close the explanation panel.</p>
+<div class="grid g2 rv" style="animation-delay:.16s" id="objectionGrid"></div>
+<div class="card rv" style="animation-delay:.32s;margin-top:1rem">
+<h4>Example advertisement</h4>
+<img class="pic" src="example-advertisement-3.jpg" alt="Example advertisement">
+<p class="pic-label">Add your attached advertisement image here as <strong>example-advertisement-3.jpg</strong></p>
+</div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page" id="p6">
+<div class="kicker rv">Page 06</div>
+<h2 class="rv" style="animation-delay:.05s">Conclusion</h2>
+<p class="lead rv" style="animation-delay:.1s">Advertising is an important promotional tool. It informs potential customers, creates interest and persuades them to purchase goods or services.</p>
+<div class="grid g2 rv" style="animation-delay:.16s">
+<div class="card"><span class="tag teal">Strengths</span><h3>Why advertising matters</h3><ul><li>Mass reach across large geographical areas.</li><li>Enhances customer satisfaction and confidence.</li><li>Expressive through visuals, sound and graphics.</li><li>Economical when reaching a large audience.</li></ul></div>
+<div class="card"><span class="tag red">Limitations</span><h3>Where advertising falls short</h3><ul><li>Less forceful than personal selling.</li><li>Lacks direct and immediate feedback.</li><li>Inflexible message.</li><li>Lower effectiveness in certain selling situations.</li></ul></div>
+</div>
+<div class="note gold rv" style="animation-delay:.28s"><strong>Advertising informs, persuades and influences—but effective marketing requires the right communication mix.</strong></div>
+<div class="card rv" style="animation-delay:.34s">
+<h4>Example advertisement</h4>
+<img class="pic" src="example-advertisement-4.jpg" alt="Example advertisement">
+<p class="pic-label">Add your attached advertisement image here as <strong>example-advertisement-4.jpg</strong></p>
+</div>
+</section>
+
+<!-- PAGE 7 -->
+<section class="page" id="p7">
+<div class="thanks">
+<div class="thanks-card rv">
+<div class="badge">Akshara PU College</div>
+<h1>THANK YOU</h1>
+<p class="lead center">Questions and Discussion</p>
+<p><strong>Guidance:</strong> SANTHOSH SIR</p>
+<p>Prepared by: Preetham, Chethan, Parmesh, Chinmaya, Ekanth and Jeevan</p>
+<button class="btn btn-white" onclick="go(1)">↩ Return to Introduction</button>
+</div>
+</div>
+</section>
+
+</main>
+
+<div class="bottom">
+<button class="btn btn-white" id="prev" onclick="move(-1)">← Previous</button>
+<div class="hint">Use <kbd>←</kbd> <kbd>→</kbd> to navigate</div>
+<button class="btn btn-blue" id="next" onclick="move(1)">Next →</button>
+</div>
+</div>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal">
+<div class="modal-top">
+<div><span class="tag" id="modalTag"></span><h2 id="modalTitle" style="margin:.2rem 0 .6rem"></h2></div>
+<button class="close" onclick="closeModal()">Close ✕</button>
+</div>
+<div id="modalBody"></div>
+</div>
+</div>
+
+<script>
+const pages=[...document.querySelectorAll(".page")];
+const menu=document.getElementById("menu");
+const labels=["Introduction","Context","Features","Merits","Objections","Conclusion","Thank You"];
+let current=1;
+
+labels.forEach((label,index)=>{
+const button=document.createElement("button");
+button.className="tab";
+button.textContent=label;
+button.setAttribute("aria-label",`Go to ${label}`);
+button.onclick=()=>go(index+1);
+menu.appendChild(button);
+});
+
+function go(pageNumber){
+current=Math.min(7,Math.max(1,pageNumber));
+pages.forEach((page,index)=>page.classList.toggle("active",index+1===current));
+[...menu.children].forEach((button,index)=>button.classList.toggle("active",index+1===current));
+document.getElementById("count").textContent=`0${current} / 07`;
+document.getElementById("bar").style.width=(current/7*100)+"%";
+document.getElementById("prev").style.opacity=current===1?".35":"1";
+document.getElementById("next").style.opacity=current===7?".35":"1";
+document.getElementById("main").scrollTop=0;
+pages[current-1].querySelectorAll(".rv").forEach(element=>{
+element.style.animation="none";
+void element.offsetWidth;
+element.style.animation="";
+});
+}
+
+function move(direction){go(current+direction)}
+
+document.addEventListener("keydown",event=>{
+if(event.key==="ArrowRight")move(1);
+if(event.key==="ArrowLeft")move(-1);
+if(event.key==="Escape")closeModal();
+});
+
+const merits=[
+["Mass Reach","Advertising is a medium through which a large number of people can be reached over a vast geographical area. For example, an advertisement placed in a national daily newspaper can reach lakhs of subscribers."],
+["Enhancing Customer Satisfaction and Confidence","Advertising creates confidence among prospective buyers. Customers feel more comfortable and assured about product quality, and therefore feel more satisfied."],
+["Expressiveness","With developments in art, computer design and graphics, advertising has become one of the most forceful media of communication. Special effects can make even simple products and messages appear very attractive."],
+["Economy","Advertising is an economical mode of communication when a large number of people are to be reached. Because of its wide reach, the overall cost is spread across numerous communication links, reducing the per-unit cost of reach."]
+];
+
+const objections=[
+["Adds to Cost","Critics argue that advertising unnecessarily adds to the cost of a product, which is ultimately passed on to buyers through higher prices. Television advertisements for a few seconds and print advertisements can cost marketers large amounts of money.","Although advertising costs money, it can increase demand by informing many potential buyers about a product’s availability and features. Higher demand can lead to higher production and economies of scale, reducing the per-unit cost of production."],
+["Undermines Social Values","Advertising is criticised for undermining social values and promoting materialism. It may create discontent because people learn about new products and feel dissatisfied with their present situation. Some advertisements may also present lifestyles that do not receive social approval.","This criticism is not entirely true. Advertising informs buyers about new products that may improve upon existing products. The final choice to buy or not buy rests with the buyer."],
+["Confuses the Buyers","Many products make similar claims, which can confuse buyers about which claim is true and which product should be trusted. For example, competing detergent brands may make similar claims about whiteness or stain removal, while competing toothpaste brands may make similar claims about whiteness or freshness.","Supporters argue that buyers are rational and can make purchase decisions using factors such as price, style and size. Buyers can reduce confusion by analysing information in advertisements and other sources. However, this criticism cannot be completely overruled."],
+["Encourages Sale of Inferior Products","Advertising does not distinguish between superior and inferior products and may persuade people to purchase even inferior products.","Superiority and inferiority depend on quality, which is a relative concept. The desired quality depends on the economic status and preferences of target customers. Advertisements sell products of a given quality, and buyers purchase them if the products suit their requirements. However, no advertisement should make false claims about product quality; a firm making false claims can be prosecuted."]
+];
+
+function buildCards(items,grid,label){
+items.forEach((item,index)=>{
+const card=document.createElement("button");
+card.className="clickable";
+card.innerHTML=`
+<span class="tag ${label==="Merit"?"gold":"red"}">${label} ${index+1}</span>
+<h3>${item[0]}</h3>
+<p>Click to view detailed explanation</p>
+<span class="plus">+</span>`;
+card.onclick=()=>openModal(item,label);
+grid.appendChild(card);
+});
+}
+
+buildCards(merits,document.getElementById("meritGrid"),"Merit");
+buildCards(objections,document.getElementById("objectionGrid"),"Objection");
+
+function openModal(item,label){
+document.getElementById("modalTag").textContent=label;
+document.getElementById("modalTitle").textContent=item[0];
+document.getElementById("modalBody").innerHTML=`
+<p>${item[1]}</p>
+${item[2]?`<div class="note"><strong>Chapter’s response:</strong> ${item[2]}</div>`:""}`;
+document.getElementById("overlay").classList.add("open");
+document.querySelector(".close").focus();
+}
+
+function closeModal(){
+document.getElementById("overlay").classList.remove("open");
+}
+
+document.getElementById("overlay").addEventListener("click",event=>{
+if(event.target.id==="overlay")closeModal();
+});
+
+go(1);
+</script>
+</body>
+</html>
